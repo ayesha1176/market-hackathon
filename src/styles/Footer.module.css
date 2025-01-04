@@ -1,0 +1,161 @@
+/* General footer styling */
+.footer {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px 0;
+  width: 100%; /* Ensure footer takes full width */
+  box-sizing: border-box; /* Include padding in width */
+  margin: 0; /* Remove any default margins */
+  overflow: hidden; /* Prevent content from overflowing */
+}
+
+/* Container for sections */
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Wrap sections on smaller screens */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+/* Individual sections */
+.section {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+  padding: 0 10px; /* Add horizontal padding for better spacing */
+  text-align: left;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #4caf50;
+}
+
+.section p,
+.section a {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #fff;
+  text-decoration: none;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section ul li {
+  margin-bottom: 8px;
+}
+
+.section ul li a:hover {
+  color: #4caf50;
+}
+
+/* Social links */
+.socials a {
+  margin-right: 10px;
+  font-size: 14px;
+  color: #4caf50;
+}
+
+.socials a:hover {
+  text-decoration: underline;
+}
+
+/* Bottom bar */
+.bottomBar {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  background-color: #4caf50;
+  color: hsl(0, 41%, 93%);
+  margin-top: 20px;
+  width: 100%; /* Full width ensured */
+  box-sizing: border-box;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center align items */
+  }
+
+  .section {
+    text-align: center; /* Center-align text for smaller screens */
+    min-width: 100%; /* Ensure sections take full width */
+    margin-bottom: 15px; /* Adjust spacing */
+  }
+
+  .socials a {
+    margin: 5px; /* Adjust margin for social icons */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 15px 10px; /* Reduce padding for smaller screens */
+    width: 100%; /* Ensure full width */
+  }
+
+  .container {
+    width: 100%; /* Force container to full width */
+    padding: 0; /* Remove extra padding */
+  }
+
+  .section {
+    width: 100%; /* Make sections take full width */
+    padding: 10px 0; /* Adjust vertical padding */
+    margin-bottom: 10px; /* Add spacing between sections */
+  }
+
+  .section h3 {
+    font-size: 16px; /* Reduce heading size for smaller screens */
+  }
+
+  .section p,
+  .section a {
+    font-size: 13px; /* Reduce text size */
+  }
+
+  .bottomBar {
+    font-size: 12px; /* Reduce bottom bar text size */
+    padding: 8px 0; /* Adjust padding */
+    width: 100%; /* Ensure it takes full width */
+  }
+
+  /* Ensure no content overflows */
+  .footer * {
+    max-width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+}
+
+@media (max-width: 380px) {
+  .footer {
+    padding: 15px 8px; /* Adjust padding for extra small screens */
+  }
+
+  .section {
+    text-align: center; /* Center-align all text */
+    width: 100%; /* Force section to full width */
+  }
+
+  .container {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center;
+    width: 100%; /* Ensure container spans full width */
+  }
+
+  .bottomBar {
+    font-size: 11px; /* Further reduce bottom bar text size */
+    padding: 5px 0; /* Adjust padding for extra small screens */
+  }
+}

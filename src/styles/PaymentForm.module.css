@@ -1,0 +1,97 @@
+/* PaymentForm.module.css */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin-top: 60px;
+  background-color: #f8f9fa;
+}
+
+.section {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.sectionDescription {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+.step {
+  font-size: 12px;
+  font-weight: bold;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+.paymentOptions,
+.cardDetails,
+.checkboxes {
+  margin-bottom: 20px;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cardIcons img {
+  width: 30px;
+  margin-left: 5px;
+}
+
+.cardDetails input {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.rentButton {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.rentButton:hover {
+  background: #0056b3;
+}
+
+.security {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.security span {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.security p {
+  font-size: 14px;
+  color: #6c757d;
+}
+

@@ -1,0 +1,106 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards per row on large screens */
+  gap: 20px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  margin-top: 60px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.cardHeader {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardHeader h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.cardHeader p {
+  margin: 0;
+  color: #555;
+}
+
+.favorite {
+  font-size: 18px;
+  color: red;
+}
+
+.cardImage {
+  width: 100%;
+  height: auto;
+}
+
+.cardDetails {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.specs p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.price {
+  text-align: center;
+}
+
+.price h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.rentButton {
+  padding: 8px 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.rentButton:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 1024px) {
+  /* 2 cards per row on medium screens (tablets) */
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  /* 1 card per row on small screens (mobiles) */
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .cardDetails {
+    flex-direction: column;
+    text-align: center;
+  }
+}

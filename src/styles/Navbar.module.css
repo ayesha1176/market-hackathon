@@ -1,0 +1,96 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff; /* Blue background */
+  padding: 10px 20px;
+  color: white;
+  position: relative;
+  flex-wrap: nowrap;
+   /* Ensures content stays in one row */
+   position: fixed;
+   top: 0;
+   width: 97%;
+   z-index: 999;
+  
+}
+
+/* Logo Styling */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  white-space: nowrap; /* Prevents wrapping */
+}
+
+/* Navigation Menu */
+.navMenu {
+  list-style: none;
+  display: flex;
+  gap: 15px; /* Space between menu items */
+}
+
+.navMenu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.navMenu li a:hover {
+  color: #ffd700; /* Gold hover effect */
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Responsive Menu for Small Devices */
+@media screen and (max-width: 768px) {
+  /* Ensure navbar wraps correctly */
+  .navbar {
+    flex-wrap: wrap; /* Allows wrapping for small screens */
+  }
+
+  /* Hide navMenu initially */
+  .navMenu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #007bff;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    
+  }
+
+  /* Show navMenu when active */
+  .navMenu.active {
+    display: flex;
+  }
+
+  /* Hamburger icon visibility */
+  .hamburger {
+    display: flex; 
+    /* Show hamburger for small screens */
+    flex-direction: column;
+    padding-right: 20px;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1000; 
+  }
+}
+

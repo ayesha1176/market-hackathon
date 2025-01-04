@@ -1,0 +1,119 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+    flex-wrap: wrap; /* Ensures wrapping for smaller screens */
+    margin-top: 80px;
+  }
+  
+  .rentalSummary, .billingInfo {
+    width: 45%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Adds spacing for stacking */
+  }
+  
+  .carDetails {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .carImage {
+    width: 100px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 4px;
+  }
+  
+  .priceDetails {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  
+  .promoCode {
+    display: flex;
+    margin: 20px 0;
+  }
+  
+  .promoCode input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .promoCode button {
+    padding: 10px 20px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  
+  .totalPrice {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .totalPrice h3 {
+    color: #0070f3;
+  }
+  
+  .formRow {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    flex-wrap: wrap; /* Ensures wrapping for inputs */
+  }
+  
+  .formRow div {
+    width: 48%; /* Adjust width for responsive layout */
+  }
+  
+  .myClass :global(input) {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+  }
+  
+  .myClass :global(label) {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Responsive Media Queries */
+  @media (max-width: 768px) {
+    .rentalSummary, .billingInfo {
+      width: 100%; /* Stacks on smaller screens */
+    }
+  
+    .formRow div {
+      width: 100%; /* Full-width inputs on smaller screens */
+      margin-bottom: 10px; /* Adds spacing between inputs */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .promoCode input {
+      font-size: 14px; /* Smaller font for small screens */
+    }
+  
+    .promoCode button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .totalPrice h3 {
+      font-size: 18px;
+    }
+  }
+  
