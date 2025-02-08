@@ -2,13 +2,14 @@ import React from "react";
 import styles from "../styles/Catalogue.module.css"; // Link to your CSS module
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ProductCards from "./products/page";
 
 const Catalogue = () => {
   return (
     <>
       {/* Navbar outside the container */}
       <Navbar />
-
+      < ProductCards/>
       {/* Main Content */}
       <div className={styles.container}>
         {/* Card 1 */}

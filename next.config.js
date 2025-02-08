@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  // Add other configuration options here
+  images: {
+    domains: ['cdn.sanity.io'],
+  },
 };
 
-module.exports = nextConfig;
+export default nextConfig;
